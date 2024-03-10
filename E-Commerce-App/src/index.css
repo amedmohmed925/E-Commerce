@@ -1,0 +1,65 @@
+
+/* Start Style Section Three */
+.pannar{
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.h-25{
+height: 30% !important;
+}
+.img-headPhone{
+    position: absolute;
+    top: -100px;
+}
+@media  (min-width: 320px) and (max-width: 570px){
+   
+    .textOne, .textTwo {
+        padding: 0 !important;
+    }
+    h1 br{
+        display: none;
+    }
+    
+}
+@media  (min-width: 571px) and (max-width: 769px){
+   
+    .img-headPhone{
+        display: none !important;
+    }
+    .textOne, .textTwo {
+        padding: 0 !important;
+    }
+    h1 br{
+        display: none;
+    }
+    
+}
+@media  (min-width: 770px) and (max-width: 1024px){
+    h1 br{
+        display: none;
+    }
+    .img-headPhone{
+        top: 18%;
+        right: 0;
+    }
+}
+.cards{
+    width: 97%;
+    margin: auto;
+}
+.box{
+    width: 285px;
+    height: 285px;
+    transition: 0.3s;
+}
+.card-box:hover{
+    transform: scale(1.1);
+}
+/* End Style Section Three */
