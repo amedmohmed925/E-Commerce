@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../SummerSale.css'; 
-import CardsSectionThree from './Cards'; 
+import '../StyleSectionFour.css'; 
+import Cards from './CardsSectionFour'; 
 
 class SummerSale extends Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class SummerSale extends Component {
                 <p className='mx-auto '>There are many variations passages</p>
               
             </div>
-
+            <Cards />
       </div>
     );
   }

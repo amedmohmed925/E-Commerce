@@ -1,5 +1,5 @@
 import React from 'react';
-import CardsSectionThree from '../components/CardsSectionThree';
+import CardsSectionThree from './CardsSectionThree';
 
 const SectionThree = () => {
     return (
