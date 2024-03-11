@@ -1,0 +1,74 @@
+.summer-sale-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22da40;
+    width: 450px;
+    height: 100px;
+    
+}
+  
+  .left-content, .middle-content, .right-content {
+    width: 30%;
+  }
+  
+  .middle-content {
+    text-align: center;
+  }
+  
+  .special-offer-image {
+    width: 150px ;  
+    height: 150px; 
+    border-radius: 50%; 
+  }
+  
+  .countdown span {
+    margin: 0 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgb(238, 245, 238);
+    color: rgb(24, 23, 23);
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(12, 51, 12);
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 10px;
+  }
+.card-box {
+    width: calc(33.33% - 10px); 
+    padding: 10px;
+    box-sizing: border-box; 
+    background-color: #f5f5f5; 
+    border-radius: 8px;
+ }
+
+.card-box img {
+    width: 100%;
+    border-radius: 8px; 
+}
+
+.fs-4 {
+    font-size: 1.5rem;
+    margin: 10px 0; 
+}
+
+.fw-light {
+    font-weight: lighter; 
+}
+
+.fw-bold {
+    font-weight: bold; 
+}
+
+.error {
+    color: red; 
+}
