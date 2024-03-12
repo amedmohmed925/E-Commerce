@@ -2,9 +2,9 @@ import React from 'react';
 
 function Cards() {
     const arr = [
-        { title: "hour", src: '/images/hour.png', para: "$1040", },
-        { title: "laptop", src: './hhhhe.jpg', para: "$300", },
-        { title: "Virtual reality", src: '/portrait-young-african-american-man-with-vr-glasses.jpg', para: "$8000", },
+           { title: "hour", src: '/images/hour.png', para: "$1040", },
+        { title: "laptop", src: '/images/laptop.jpeg', para: "$300", },
+        { title: "Virtual reality", src: '/images/Virtual reality.jpg', para: "$8000", },
         
     ]
 
