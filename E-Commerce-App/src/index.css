@@ -63,6 +63,26 @@ height: 30% !important;
     transform: scale(1.1);
 }
 /* End Style Section Three */
+/* Start Style Section Four */
+
+.countdown{
+    padding: 10px 16px;
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    color: #198754;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 10px 0;
+}
 .pannar-2{
     position: relative;
 }
+.w-card{
+    width: 287px;
+}
+p{
+    font-size: 15px !important;
+}
+/* End Style Section Four */

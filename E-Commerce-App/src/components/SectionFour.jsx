@@ -15,7 +15,7 @@ class SummerSale extends Component {
   }
 
   componentDidMount() {
-    // حساب الزمن المتبقي
+    
     const calculateTimeLeft = () => {
       const difference = +new Date('2024-12-31') - +new Date();
       let timeLeft = {};
@@ -32,7 +32,6 @@ class SummerSale extends Component {
       return timeLeft;
     };
 
-    // تحديث العداد 
     this.interval = setInterval(() => {
       this.setState({ ...calculateTimeLeft() });
     }, 1000);
@@ -54,7 +53,7 @@ class SummerSale extends Component {
             <span className='fs-6'>Beats Solo Air</span>
             <h1 className='display-5 fw-bold'>Summer Sale</h1>
             <p className='fs-6'>Company that’s grown from 270 to 480 employees <br /> in the last 12 months.</p>
-            <div className="countdown">
+            <div className="countdown mt-n1">
               <span>{days}</span>
               <span>{hours}</span>
               <span>{minutes}</span>
