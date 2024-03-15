@@ -2,15 +2,16 @@
 import './App.css'
 import SectionThree from './components/SectionThree'
 import './index.css'
-import Combonet from './components/SectionFour'
-import Footer from './components/Footer-2'
+import SectionFour from './components/SectionFour'
+import Footer from './components/Footer'
 function App() {
 
   return (
     <div>
         <SectionThree />
-        <Combonet />
+        <SectionFour />
         <Footer/>
+
     </div>
   )
 }

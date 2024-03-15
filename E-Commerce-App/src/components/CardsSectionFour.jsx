@@ -2,8 +2,9 @@ import React from 'react';
 
 function Cards() {
     const arr = [
-           { title: "How to choose perfect gadgets",
-            src: '/images/hour.png',
+          
+            {title: "How to choose perfect gadgets",
+            src: '/images/hour.jpg',
             para: "Whene while the lovelly vally letters with vapour gruond me, and the menison sun the Lipper S...",
             date:'March 12,2024' },
         { title: "How to choose perfect gadgets ",
