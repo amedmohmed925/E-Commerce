@@ -1,4 +1,3 @@
-import React from 'react';
 import CardsSectionThree from './CardsSectionThree';
 
 const SectionThree = () => {
