@@ -31,7 +31,7 @@ export default function Navbar() {
           <a className="nav-link" href="#">Login</a>
         </li>
         <li className="nav-item m-2">
-        <a href="#"><i class="fa-solid fa-magnifying-glass" style={{color:'black'}}></i></a>
+        <a href="#"><i className="fa-solid fa-magnifying-glass" style={{color:'black'}}></i></a>
         </li>
         <li className="nav-item m-2">
        <a href="#" ><i className="fa-solid fa-bag-shopping" style={{color:'black'}} /></a>
@@ -40,8 +40,6 @@ export default function Navbar() {
     </div>
   </div>
 </nav>
-
-   
 
     </>
   )
