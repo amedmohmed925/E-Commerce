@@ -1,16 +1,20 @@
 
 import './App.css'
-import SectionThree from './components/SectionThree'
+import SectionThree from './components/sectionThree'
 import './index.css'
 import Combonet from './components/SectionFour'
-import Footer from './components/Footer-2'
+import Home from './components/Home/Home'
+import Navbar from './components/Navbar/Navbar'
+
 function App() {
 
   return (
     <div>
+        
+        <Navbar></Navbar>
+        <Home></Home>
         <SectionThree />
         <Combonet />
-        <Footer/>
     </div>
   )
 }

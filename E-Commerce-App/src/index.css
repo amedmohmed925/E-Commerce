@@ -86,32 +86,14 @@ p{
     font-size: 15px !important;
 }
 /* End Style Section Four */
-/* Style Footer */
-.main-prands{
-    background-color: #f7f7f7;
-    height: 260px;
-    
+
+/* Section One */
+.headphone {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 13.2vw;
+    font-weight: bold;
+    color: white; 
+
 }
-.prands{
-    width: 97%;
-   
-}
-.one h2{
-    font-family: monospace;
-    letter-spacing: 7px;
-    padding: 5px 0;
-}
-.one p{
-    font-size: 0.9rem !important;
-}
-.three p{
-    font-size: 0.9rem !important;
-}
-a{
-    text-decoration: none;
-}
-.input-footer{
-background-image: linear-gradient(to left , rgb(206, 206, 206), rgb(235, 234, 234));
-outline: none;
-}
-/* End style footer */
+/* End of Section One */
