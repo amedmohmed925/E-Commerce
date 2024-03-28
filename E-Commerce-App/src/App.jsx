@@ -1,11 +1,12 @@
 
 import './App.css'
-import SectionThree from './components/SectionThree/SectionThree'
+import SectionThree from './components/page1/SectionThree/SectionThree'
 import './index.css'
-import SectionFour from './components/SectionFour/SectionFour'
-import Footer from './components/Footer/Footer'
-import Home from './components/Home/Home'
-import Navbar from './components/Navbar/Navbar'
+import SectionTwo from './components/page1/SectionTwo/SectionTwo'
+import SectionFour from './components/page1/SectionFour/SectionFour'
+import Footer from './components/page1/Footer/Footer'
+import Home from './components/page1/Home/Home'
+import Navbar from './components/page1/Navbar/Navbar'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <div>
       <Navbar></Navbar>
         <Home></Home>
+        <SectionTwo />
         <SectionThree />
         <SectionFour />
         <Footer/>

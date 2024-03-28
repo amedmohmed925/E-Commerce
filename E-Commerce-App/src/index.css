@@ -125,3 +125,26 @@ background-image: linear-gradient(to left , rgb(206, 206, 206), rgb(235, 234, 23
 outline: none;
 }
 /* End style footer */
+/* .card1{
+background-image: url("/images/img1.png");
+background-size: cover;
+}
+.card2{
+    background-image: url("/images/img2.png");
+    background-size: cover;
+    }
+    .card3{
+        background-image: url("/images/img3.png");
+        background-size: cover;
+        background-position: right;
+
+        }
+        
+            .card5{
+                background-image: url("/images/img5.png");
+                background-size: cover;
+                }
+                .card6{
+                    background-image: url("/images/img6.png");
+                    background-size: cover;
+                    } */
