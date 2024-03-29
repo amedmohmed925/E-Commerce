@@ -1,25 +1,27 @@
 
 import './App.css'
-import SectionThree from './components/page1/SectionThree/SectionThree'
+import HomePage from './components/HomePage/HomePage'
+import ShopPage from './components/ShopPage/ShopPage';
+import AboutPage from './components/AboutPage/About';
+import BlogPage from'./components/BlogPage/Blog'
+import ContactPage from './components/ContactPage/Contact'
 import './index.css'
-import SectionTwo from './components/page1/SectionTwo/SectionTwo'
-import SectionFour from './components/page1/SectionFour/SectionFour'
-import Footer from './components/page1/Footer/Footer'
-import Home from './components/page1/Home/Home'
-import Navbar from './components/page1/Navbar/Navbar'
+import { BrowserRouter as Router, Routes,  Route} from "react-router-dom";
 
 function App() {
 
   return (
-    <div>
-      <Navbar></Navbar>
-        <Home></Home>
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
-        <Footer/>
+    <Router>
+      <Routes>
+        <Route path='/' element={ <HomePage />}/>
+        <Route path='/shop' element={ <ShopPage />}/>
+        <Route path='/about' element={ <AboutPage />}/>
+        <Route path='/blog' element={ <BlogPage />}/>
+        <Route path='/contact' element={ <ContactPage />}/>
 
-    </div>
+      </Routes>
+     
+    </Router>
   )
 }
 

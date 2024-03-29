@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <div className='main-footer-2 d-flex justify-content-around flex-wrap p-5 gap-5'>
@@ -19,10 +19,10 @@ function Footer() {
       <div className="two">
         <h2 className='fs-4 py-2'>Quick Linkes</h2>
         <ul className='p-0'>
-            <li className='list-group-item'><a  className='text-black fw-bold' href="#">Home</a></li>
-            <li className='list-group-item'><a className='text-black fw-bold' href="#">About</a></li>
-            <li className='list-group-item'><a className='text-black fw-bold' href="#">Shop</a></li>
-            <li className='list-group-item'><a className='text-black fw-bold' href="#">Contact</a></li>
+            <li className='list-group-item'><Link to={'/'}  className='text-black fw-bold' href="#">Home</Link></li>
+            <li className='list-group-item'><Link to={'/About'} className='text-black fw-bold' href="#">About</Link></li>
+            <li className='list-group-item'><Link to={'/Shop'} className='text-black fw-bold' href="#">Shop</Link></li>
+            <li className='list-group-item'><Link to={'/Contact'} className='text-black fw-bold' href="#">Contact</Link></li>
         </ul>
       </div>
 
