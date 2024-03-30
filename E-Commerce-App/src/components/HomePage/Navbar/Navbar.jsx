@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -27,15 +27,33 @@ export default function Navbar() {
           <NavLink to={'/contact'} className="nav-link" href="#">Contact us</NavLink>
         </li>
       </ul>
-      <ul className="navbar-nav mb-2 mb-lg-0">
+      <ul className="navbar-nav mb-2 mb-lg-0 align-items-center navbar-expand-lg nav">
       <li className="nav-item">
-          <a className="nav-link" href="#">Login</a>
+          <Link to={'/login'} className="nav-link" href="#">Login</Link>
         </li>
         <li className="nav-item m-2">
         <a href="#"><i className="fa-solid fa-magnifying-glass" style={{color:'black'}}></i></a>
         </li>
         <li className="nav-item m-2">
        <a href="#" ><i className="fa-solid fa-bag-shopping" style={{color:'black'}} /></a>
+        </li>
+        <li>
+          <Link to={'/register'} className="nav-link CreatAccount"  href="#">
+          <button className="animated-button">
+  <svg xmlns="http://www.w3.org/2000/svg" className="arr-2" viewBox="0 0 24 24">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <span className="text">Creat Account</span>
+  <span className="circle"></span>
+  <svg xmlns="http://www.w3.org/2000/svg" className="arr-1" viewBox="0 0 24 24">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</button>
+            </Link>
         </li>
       </ul>
     </div>
