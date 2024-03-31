@@ -36,7 +36,7 @@ const RegisterForm = () => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
-
+    
   return (
     <div>
       <h2>User Registration</h2>

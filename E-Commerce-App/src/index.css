@@ -8,7 +8,9 @@
 
 }
 /* End of Section One */
-
+.active{
+    color: #dc3545 !important;
+}
 /* Start Style Section Three */
 .pannar{
     width: 97%;
