@@ -73,7 +73,7 @@ const RegisterForm = () => {
     <div className='main-register'>
       <div className='img-input'>
         <img className='imgPage' src="/images/register-img.jpg" alt="" />
-        <form onSubmit={handleSubmit}>
+        <form className='formRegister' onSubmit={handleSubmit}>
         <h2 className='titlePage'>Create Account</h2>
 
            <input

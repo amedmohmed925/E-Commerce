@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom'; 
+// import { useHistory } from 'react-router-dom'; 
 import axios from 'axios';
-import './UserLoginForm.css';
+import './Login.css';
 
 const UserLoginForm = () => {
-  const history = useHistory(); 
+  // const history = useHistory(); 
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -21,7 +21,9 @@ const UserLoginForm = () => {
       setFormData({
         email: '',
         password: '',
-      });
+    })}catch (error) {
+      console.error('Error registering user:', error.message);
+    }}
       
 // Execute the directive after successful login 
   //  const emailArray = formData.email.split('@');
@@ -41,13 +43,17 @@ const UserLoginForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
+    };
 
   return (
-    <div>
+    <div className='main-register'>
+      <div className='img-input'>
+      <img className='imgPage' src="/images/register-img.jpg" alt="" />
+
+      <form className='formRegister' onSubmit={handleSubmit}>
       <h2>User Login</h2>
-      <form onSubmit={handleSubmit}>
         <input
+        className='input-register'
           type="email"
           name="email"
           placeholder="Email"
@@ -55,15 +61,18 @@ const UserLoginForm = () => {
           onChange={handleChange}
         />
         <input
+        className='input-register'
           type="password"
           name="password"
           placeholder="Password"
           value={formData.password}
           onChange={handleChange}
         />
-        <button type="submit">Login</button>
+        <button className='register-ptn ' type="submit">Login</button>
       </form>
+      </div>
+      
     </div>
-  );
-export default UserLoginForm ;
-  
+    );
+  }
+export default UserLoginForm 
