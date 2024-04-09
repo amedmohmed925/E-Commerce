@@ -33,8 +33,8 @@ const AddProduct = () => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
     setShowConfirmation(false); 
+    console.log(e)
   };
-
   const resetForm = () => {
     setFormData({
       name: '',
