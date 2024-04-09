@@ -8,8 +8,11 @@ import ContactPage from './components/ContactPage/Contact'
 import RegisterForm from './components/RegisterPage/Register';
 import Login from './components/LoginPage/Login'
 import PageFound from './components/pageFound'
+import AddProduct from './components/AddProduct/AddProduct';
 import './index.css'
 import { BrowserRouter as Router, Routes,  Route} from "react-router-dom";
+import EditProduct from './components/EditProduct/EditProduct';
+import DeleteProduct from './components/DeleteProduct/DeleteProduct';
 
 function App() {
 
@@ -23,6 +26,10 @@ function App() {
         <Route path='/contact' element={ <ContactPage />}/>
         <Route path='/register' element={ <RegisterForm />}/>
         <Route path='/login' element={ <Login />}/>
+        <Route path='/addproduct' element={<AddProduct/>}/>
+        <Route path='/edit/:id' element={<EditProduct/>}/>
+        <Route path='/delete/:id' element={<DeleteProduct/>}/>
+
         <Route path='*' element={<PageFound/>}/>
       </Routes>
      

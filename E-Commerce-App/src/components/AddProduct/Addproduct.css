@@ -1,0 +1,27 @@
+.addPdoduct{
+    height: 90vh;
+}
+.ptn-addProduct {
+    background-color:#dc3545 ;
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 200;
+    transition: 0.1s;
+    max-width: 190px;
+}
+.ptn-addProduct:hover{
+    background-color: #9e101e;
+}
+.ptn-addProduct i{
+    font-weight: 100;
+    padding: 0 5px;
+}
+.ptnadd{
+    margin: auto !important;
+}
+.success{
+    margin: auto;
+}

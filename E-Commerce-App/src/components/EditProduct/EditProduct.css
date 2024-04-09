@@ -1,0 +1,50 @@
+.EditData{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.labelEdit{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    width: 150px;}
+.inputEdit{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin: 15px auto;
+    font-size: 20px !important;
+    color: black;
+    display: inline-table;
+}
+.ptnSave{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin: auto;
+background-color: green;    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.1s;
+    margin-left: 165px;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+    .inputEdit{
+        width: 90%;
+    }
+    .ptnSave{
+        width: 90%;
+        margin: 0;
+    }
+    .success{
+        margin: 0 !important;
+    }
+}

@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <><nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container">
-    <a className="navbar-brand text-danger" href="#">PHLOX</a>
+    <a className="navbar-brand text-danger" href="/">PHLOX</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -25,6 +25,11 @@ export default function Navbar() {
         </li>
         <li className="nav-item">
           <NavLink to={'/contact'} className="nav-link" href="#">Contact us</NavLink>
+        </li>
+        <li className="nav-item">
+          <Link  to={'/addproduct'} className="nav-link ptn-addProduct" href="#">
+          <i className="fa-solid fa-plus"></i>
+            Add Product</Link>
         </li>
       </ul>
       <ul className="navbar-nav mb-2 mb-lg-0 align-items-center navbar-expand-lg nav">

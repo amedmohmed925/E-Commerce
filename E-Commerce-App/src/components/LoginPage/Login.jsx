@@ -51,7 +51,7 @@ const UserLoginForm = () => {
       <img className='imgPage' src="/images/register-img.jpg" alt="" />
 
       <form className='formRegister' onSubmit={handleSubmit}>
-      <h2>User Login</h2>
+      <h2 className='titleLogin'>User Login</h2>
         <input
         className='input-register'
           type="email"
