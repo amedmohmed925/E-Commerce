@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './StyleSectionFour.css';
 import Cards from './CardsSectionFour';
-
+import {Link} from "react-router-dom"
 class SummerSale extends Component {
   constructor(props) {
     super(props);
@@ -59,8 +59,9 @@ class SummerSale extends Component {
               <span>{minutes}</span>
               <span>{seconds}</span>
             </div>
-            <button className='btn btn-light rounded-pill px-4'>Shop</button>
-          </div>
+            <Link to={"/shop"}>
+                    <button className='btn btn-light rounded-pill px-4'>Shop</button>
+                  </Link>          </div>
         </div>
         <div className="cards py-5 d-flex flex-column justify-content-center">
           <h1 className='mx-auto fw-bold'>Recent News</h1>

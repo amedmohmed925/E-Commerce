@@ -239,5 +239,12 @@ outline: none;
     .nav{
         align-items: flex-start !important;
     }
+    .imgCardSectio2{
+      margin-left: 20px !important;
+      position: absolute !important;
+      width: 290px !important;
+      margin-top: 15px !important;
+    }
 }
    /* Style Button Creat Account */
+   

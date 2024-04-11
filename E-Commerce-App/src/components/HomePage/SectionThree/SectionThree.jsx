@@ -1,5 +1,5 @@
 import CardsSectionThree from './CardsSectionThree';
-
+import {Link} from 'react-router-dom'
 const SectionThree = () => {
     return (
         <div className='mainSectionThree'>
@@ -16,7 +16,9 @@ const SectionThree = () => {
                     <span className='fs-6'>Beats Solo Air</span>
                     <h1 className='display-5 fw-bold'>Summer Sale</h1>
                     <p className='fs-6'>Company that’s grown from 270 to 480 employees <br /> in the last 12 months.</p>
+                  <Link to={"/shop"}>
                     <button className='btn btn-light rounded-pill px-4'>Shop</button>
+                  </Link>
                 </div>
             </div>
 
