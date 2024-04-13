@@ -81,7 +81,7 @@ const SellerProductList = () => {
   }
   return (
     <>
-      <Navbar setShowCart={setShowCart} showCart={showCart} cartItems={cartItems} cartItemss={cartItems.quantity}/>
+      <Navbar setShowCart={setShowCart} showCart={showCart} cartItems={cartItems}/>
       
       <div className={`mainSection ${showCart ? 'showCart' : ''}`}>
         <div className="headerSection">

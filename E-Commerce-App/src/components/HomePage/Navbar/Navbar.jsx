@@ -41,8 +41,9 @@ const Navbar = ({ setShowCart, showCart, cartItems }) => {
             <a href="#" className="nav-link" onClick={() => setShowCart(!showCart)}>
               <i className="fa fa-shopping-cart"></i>
               <span className="cartCount">
-                {cartItems.reduce((total, item) => total + item.quantity, 0)}
-              </span>
+  {cartItems && cartItems.length > 0 ? cartItems.reduce((total, item) => total + item.quantity, 0) : 0}
+</span>
+
             </a>
           </li>
 
