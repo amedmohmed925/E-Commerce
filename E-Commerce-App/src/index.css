@@ -17,7 +17,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+nav{
+  position: fixed !important;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
 /* Satrtr section One */
 .headphone {
     position: absolute;

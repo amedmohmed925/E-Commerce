@@ -83,7 +83,7 @@ const AddProduct = () => {
             value={formData.description}
             onChange={handleChange}
           />
-          <input className='inputEdit' type="file" accept='image/*' value={formData.prodImage} onChange={handleChange} name='prodImage'/>
+          <input className='inputEdit' type="text"  value={formData.prodImage} onChange={handleChange} name='prodImage'/>
           <button className='ptnSave ptnadd' type="submit">Add Product</button>
           {showConfirmation && <div className='success' style={{ color: 'green' }}>Product added successfully!</div>}
         {error && <div className='success' style={{ color: 'red' }}>{error}</div>}

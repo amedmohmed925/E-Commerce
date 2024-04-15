@@ -146,7 +146,9 @@ const SellerProductList = () => {
                 <p > product Name:  
                   <span className='fontWeight'> {item.name}</span>
                    <br />  Quantity: 
-                   <span className='fontWeight'> {item.quantity}</span>
+                   <span className='fontWeight'> {item.quantity}</span><br />
+                   price: 
+                   <span className='fontWeight'>  {item.price}$ </span>
                    <span title='Remove From Cart' onClick={() => hide(index)} className='removeFromCart'>Remove </span>
 
                    </p>
