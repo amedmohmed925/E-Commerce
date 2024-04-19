@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ setShowCart, showCart, cartItems }) => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary pb-14">
       <div className="container">
         <a className="navbar-brand text-danger" href="/">PHLOX</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

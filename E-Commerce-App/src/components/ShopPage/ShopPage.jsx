@@ -33,9 +33,14 @@ const SellerProductList = () => {
 
   const handlePlusQuantity = (index) => {
     const updatedProducts = [...sellerProducts];
-    updatedProducts[index].quantity += 1;
-    setSellerProducts(updatedProducts);
-    updateCart(updatedProducts[index]);
+    const availableQuantity = updatedProducts[index].stockQuantity; 
+    if (updatedProducts[index].quantity < availableQuantity) {
+      updatedProducts[index].quantity += 1;
+      setSellerProducts(updatedProducts);
+      updateCart(updatedProducts[index]);
+    } else {
+      alert(`The maximum quantity for this product is ${availableQuantity}.`);
+    }
   };
 
   const handleMinusQuantity = (index) => {
@@ -58,6 +63,8 @@ const SellerProductList = () => {
     setSelectedProductIndex(null);
     const updatedCartItems = cartItems.filter((item) => item.id !== updatedProducts[index].id);
     setCartItems(updatedCartItems);
+
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
   };
 
   const updateCart = (product) => {
@@ -66,19 +73,34 @@ const SellerProductList = () => {
       const updatedCartItems = [...cartItems];
       updatedCartItems[existingItemIndex].quantity = product.quantity;
       setCartItems(updatedCartItems);
+
+      localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
     } else {
-      setCartItems([...cartItems, { ...product }]);
+      const newCartItems = [...cartItems, { ...product }];
+      setCartItems(newCartItems);
+
+      localStorage.setItem('cartItems', JSON.stringify(newCartItems));
     }
   };
+
+  useEffect(() => {
+
+    const storedCartItems = localStorage.getItem('cartItems');
+    if (storedCartItems) {
+      setCartItems(JSON.parse(storedCartItems));
+    }
+  }, [cartItems]);
 
   const filteredProducts = sellerProducts.filter(product =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
   const cartSection = document.getElementById('cartSection');
   const closeCartSection = () => {
     setShowCart(false);
     cartSection.style.display = 'none';
-  }
+  };
+
   return (
     <>
       <Navbar setShowCart={setShowCart} showCart={showCart} cartItems={cartItems}/>
@@ -135,12 +157,13 @@ const SellerProductList = () => {
         </div>
         {showCart && (
           <div id='cartSection' className="cartSection ">
+         
            <div className='HeaderCart'>
-
             <h2>Cart</h2>
             <span title='Close' className='CloseIcon' onClick={closeCartSection}>x</span>
            </div>
-            {cartItems.map((item, index) => (
+           <div className="cardsProducts">
+           {cartItems.map((item, index) => (
               <div className='cardprod' key={item.id}>
                 <img src={item.prodImage}  />
                 <p > product Name:  
@@ -155,13 +178,18 @@ const SellerProductList = () => {
 
               </div>
             ))}
+           </div>
+           
             <div className='footer'>
 
             <p  id='total'>Total Price: <span className='fontWeight'>${totalPrice}</span></p>
             <button className='ptn-Buy'>Buy Now</button>
             </div>
+            
           </div>
+          
         )}
+        
       </div>
       <Footer />
     </>

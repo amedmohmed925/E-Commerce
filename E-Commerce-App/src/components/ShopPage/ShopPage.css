@@ -234,16 +234,17 @@
     padding: 10px;
     width: 400px;
     height: 100vh;
-    z-index: 999;
     transition: 0.3s;
     display: block; 
+    z-index: 1000;
+    overflow-y: auto;
   }
   .close{
     display: none;
   }
   .cartSection.showCart {
     display: none; 
-    right: -300px;
+    right:0;
     transition: 0.3s;
   }
   .cardprod{
@@ -282,8 +283,7 @@
     border: none;
   }
   .footer{
-    bottom: 50px !important;
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 100%;
   }
