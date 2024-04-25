@@ -18,7 +18,7 @@ const AddProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products', formData);
+      await axios.post('https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products', formData, {withCredentials:true});
       console.log('Product added successfully!');
       resetForm();
       setShowConfirmation(true);
@@ -76,6 +76,7 @@ const AddProduct = () => {
             value={formData.stockQuantity}
             onChange={handleChange}
           />
+          
           <textarea
           className='inputEdit'
             name="description"
@@ -83,7 +84,9 @@ const AddProduct = () => {
             value={formData.description}
             onChange={handleChange}
           />
+
           <input className='inputEdit' type="text"  value={formData.prodImage} onChange={handleChange} name='prodImage'/>
+
           <button className='ptnSave ptnadd' type="submit">Add Product</button>
           {showConfirmation && <div className='success' style={{ color: 'green' }}>Product added successfully!</div>}
         {error && <div className='success' style={{ color: 'red' }}>{error}</div>}

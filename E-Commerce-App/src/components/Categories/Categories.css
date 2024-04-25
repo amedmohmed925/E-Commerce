@@ -1,0 +1,40 @@
+ul.mainCardsCategories{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+}
+.cardCategories{
+    width: 300px;
+    height: 340px;
+    border-radius: 15px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 5px;
+}
+.cardCategories .imgCategories{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+.EditCat{
+    margin-top: 100px;
+}
+.mainCat{
+    margin-top: 100px !important;
+}
+.titleCat{
+    margin: auto;
+    padding: 20px 0;
+}
+.mainCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

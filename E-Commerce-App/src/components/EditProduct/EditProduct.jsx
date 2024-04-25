@@ -21,7 +21,7 @@ const EditProductPage = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products/${id}`);
+        const response = await axios.patch(`https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products/${id}`,{withCredentials:true});
         setProduct(response.data.data);
       } catch (error) {
         console.error('Error fetching product:', error);
@@ -41,7 +41,7 @@ const EditProductPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.patch(`https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products/${id}`, product);
+      const response = await axios.patch(`https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products/${id}`, product,{withCredentials:true});
       console.log('Product updated:', response.data);
       if (response.ok) {
         console.log("scsess")

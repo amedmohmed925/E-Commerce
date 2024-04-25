@@ -11,7 +11,7 @@ const DeleteProduct = () => {
 
     const handleDeleteProduct = async () => {
         try {
-            await axios.delete(`https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products/${id}`);
+            await axios.delete(`https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products/${id}`,{withCredentials: true});
             console.log('Product deleted successfully');
             navigate('/shop'); 
         } catch (error) {
