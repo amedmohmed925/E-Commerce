@@ -36,12 +36,13 @@ const AddCategory = () => {
   return (
     <>
     <Navbar />
-    <div className=''>
-      <h2 className=' py-10'>Add New Category</h2>
-      <form  onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Category Name:</label>
+    <div className='AddCategory addProduct mainSection'>
+      <h2 >Add New Category</h2>
+      <form className='EditData dataCategory'  onSubmit={handleSubmit}>
+        
           <input
+          className='inputEdit'
+          placeholder='Enter Name Category'
             type="text"
             id="name"
             name="name"
@@ -49,10 +50,11 @@ const AddCategory = () => {
             onChange={handleChange}
             required
           />
-        </div>
-        <div>
-          <label htmlFor="catImage">Category Image URL:</label>
+        
           <input
+          className='inputEdit'
+          placeholder='Enter URL image'
+
             type="text"
             id="catImage"
             name="catImage"
@@ -60,13 +62,13 @@ const AddCategory = () => {
             onChange={handleChange}
             required
           />
-        </div>
-        <button type="submit">Add Category</button>
+        
+        <button className='ptnSave ptnadd' type="submit">Add Category</button>
       </form>
-      {error && <div style={{ color: 'red' }}>{error}</div>}
-      {successMessage && <div style={{ color: 'green' }}>{successMessage}</div>}
-      <Footer />
+      {error && <div className='success' style={{ color: 'red' }}>{error}</div>}
+      {successMessage && <div className='success' style={{ color: 'green' }}>{successMessage}</div>}
     </div>
+      <Footer />
     </>
         
   );

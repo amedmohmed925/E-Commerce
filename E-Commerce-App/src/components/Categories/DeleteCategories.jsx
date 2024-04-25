@@ -27,7 +27,7 @@ const Deletecategories = () => {
             <div className='deleteSection'>
                 <h2 className='titleSectionDelete'>Delete categories</h2>
                 <div >
-                <span>Are You Sure Delete This categories?</span>
+                <span>Are You Sure Delete This category?</span>
                <div className="ptns">
                  <button className="btn btn-danger" onClick={handleDeletecategories}>Delete</button>
                  <button className="btn btn-primary" onClick={dontDelete}>Cancel</button>

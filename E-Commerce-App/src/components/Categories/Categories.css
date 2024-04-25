@@ -38,3 +38,15 @@ ul.mainCardsCategories{
     flex-wrap: wrap;
     justify-content: center;
 }
+.AddCategory{
+    margin-top: 100px;
+}
+.dataCategory{
+    display: flex;
+}
+.deleteSection{
+    margin-top: 100px;
+}
+.ptnCategoryEdit{
+    margin-left: inherit;
+}

@@ -59,6 +59,11 @@ const Navbar = ({ setShowCart, showCart, cartItems }) => {
                 <i className="fa fa-plus"></i> Add Product
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to={'/addCategory'} className="nav-link ">
+                <i className="fa fa-plus"></i> Add Category
+              </Link>
+            </li>
           
           </ul>
           <ul className="navbar-nav mb-2 mb-lg-0 align-items-center navbar-expand-lg nav">

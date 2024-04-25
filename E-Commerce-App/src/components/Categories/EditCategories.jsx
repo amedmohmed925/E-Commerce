@@ -61,21 +61,15 @@ const EditCategories = () => {
     <div>
             <Navbar />
             <div className='mainSection EditCat mt-7'>
-                <h2>Edit Product</h2>
+                <h2>Edit Category</h2>
                 <form className='EditData' onSubmit={handleSubmit}>
-                   <div>
-                    <label className='labelEdit' htmlFor="name">Name:</label>
+                   
                     <input className='inputEdit' placeholder='Name Category' type="text" id="name" name="name" value={Categories.name} onChange={handleInputChange} />
-                   </div>
-                   <div>
-                    <label className='labelEdit' htmlFor="catImage">Categories</label>
+                   
                     <input className='inputEdit' placeholder='URL Image' type="text" id="catImage" name="catImage" value={Categories.catImage} onChange={handleInputChange} />
-                   </div>
-
-                    <div>
-                        <button className='ptnSave' type="submit">Save Chenges</button>
+                   
+                        <button className='ptnSave ptnCategoryEdit' type="submit">Save Chenges</button>
                         {successMessage && <div className='success'  style={{ color: 'green', marginLeft: '165px'}}>{successMessage}</div>}
-                    </div>
                    
                 </form>
             </div>
