@@ -19,6 +19,8 @@ const SellerProductList = () => {
         const response = await axios.get('https://e-commerce-nestjs-1ad58a9d5c9f.herokuapp.com/products');
         const productsWithQuantity = response.data.data.map(product => ({ ...product, quantity: 0 }));
         setSellerProducts(productsWithQuantity);
+        const res = await axios
+    
       } catch (error) {
         console.error('Error fetching seller products:', error);
       }
